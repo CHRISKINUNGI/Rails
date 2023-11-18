@@ -1,0 +1,7 @@
+<div class="mb-3">
+    Logged in as: <%= @user.email %>
+</div>
+
+<div class="md-3">
+            <%= button_to "Logout", logout_path, method: :delete, class: "btn btn-primary" %>
+</div>
