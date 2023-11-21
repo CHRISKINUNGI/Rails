@@ -1,7 +1,13 @@
 <div class="d-flex align-items-center justify-content-center">
     <h1>Welcome To Scheduled Tweets</h1>
 </div>
+<% if Current.user%>
+    <li class="nav-item">
+        <span><%= Current.user.email %></span>
 
-<% if @user %>
-    <%= render 'main/_logout' %>
-<% end %>
+    </li>
+    <li class="nav-item">
+        <%= button_to "Logout", logout_path, method: :delete, class: "nav-link"  %>
+     </li>
+
+<% end %> 

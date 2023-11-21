@@ -1,5 +1,5 @@
 class RegistrationsController < ApplicationController
-  def new
+  def signup
     @user = User.new
   end
 
@@ -10,7 +10,7 @@ class RegistrationsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path, notice: "Successfully created account"
     else
-      render :new
+      render:signup
     end
   end
 
