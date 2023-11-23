@@ -3,10 +3,10 @@ class PasswordResetsController < ApplicationController
     end 
      
     def create 
-        @user = user.find_by(email: params[:email])
+        @user = User.find_by(email: params[:email])
 
         if @user.present?
-            #send email
+            #send password reset email
             PasswordResetMailer.with(user: @user).reset.deliver_now
 
         end    
