@@ -1,0 +1,10 @@
+<%= form_with(model: @document, local: true) do |f| %>
+  <div class="mb-3">
+    <%= f.label :file_data, class: "form-label" %>
+    <%= f.file_field :file_data, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.submit "Upload Document", class: "btn btn-primary" %>
+  </div>
+<% end %>

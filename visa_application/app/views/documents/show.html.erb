@@ -1,0 +1,11 @@
+<!-- app/views/documents/show.html.erb -->
+
+<p>
+  <strong>Name:</strong>
+  <%= @document.name %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= link_to 'Download File', @document.file_data_url %> <!-- Assuming you have a method like file_data_url in your Document model -->
+</p>

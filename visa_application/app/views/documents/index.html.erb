@@ -1,0 +1,9 @@
+<!-- app/views/documents/index.html.erb -->
+
+<h1>Your Uploaded Documents</h1>
+
+<% @documents.each do |document| %>
+  <div class="document">
+    <%= link_to document.name, document_path(document) %>
+  </div>
+<% end %>
