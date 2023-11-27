@@ -1,0 +1,201 @@
+<!-- app/views/home/index.html.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daystar Visa Applications</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .jumbotron {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      color: #fff;
+      padding: 4rem;
+      border-radius: 0;
+    }
+
+    .btn-primary {
+      background-color: #4b6cb7;
+      border-color: #4b6cb7;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: #182848;
+      border-color: #182848;
+    }
+
+    .feature-box {
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-box h2 {
+      color: #4b6cb7;
+    }
+
+    .feature-box p {
+      color: #495057;
+    }
+
+    .contact-section {
+      background-color: #4b6cb7;
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form label {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #182848;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+
+    .contact-form button:hover {
+      background-color: #4b6cb7;
+    }
+
+    /* Diverse and Inclusive Styles */
+    .inclusive-section {
+      background-color: #fff;
+      color: #495057;
+      padding: 80px 0;
+    }
+
+    .inclusive-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #4b6cb7;
+    }
+
+    .inclusive-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .inclusive-card {
+      width: 300px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .inclusive-card img {
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Daystar University</h1>
+    <p class="lead">Visa Application Portal for International Students</p>
+    <a class="btn btn-primary btn-lg" href="/login" role="button">Apply Now</a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-box">
+          <h2>Why Choose Daystar?</h2>
+          <p>Discover the benefits of studying at Daystar University. Form ni Daystar.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <h2>Visa Information</h2>
+          <p>Learn about the visa application process and requirements.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <h2>Contact Us</h2>
+          <p>Have questions? Reach out to our support team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="name">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="inclusive-section">
+    <div class="container">
+      <h2 class="text-center">Our Diverse Community</h2>
+      <div class="inclusive-cards">
+        <div class="inclusive-card">
+          <img src="https://images.app.goo.gl/WEHYMUXnA9TSGycu9" alt="User 1">
+          <h3>User 1</h3>
+          <p>Computer Science Student</p>
+        </div>
+        <div class="inclusive-card">
+          <img src="https://randomuser.me" alt="User 2">
+          <h3>User 2</h3>
+          <p>Business Administration Student</p>
+        </div>
+        <div class>
