@@ -1,1 +1,12 @@
-<h1> About Us </h1>
+<h1> About Us </h1>.object.errors.any? %>
+            <div class="alert alert-danger">
+                <%= form.object.errors.full_messages.each do |message| %>
+                   
+                <% end %>
+            </div>
+    <% end %>
+    
+    <div class="mb-3">
+        <%= form.label :password %>
+        <%= form.password_field :password, class: " form-control ", placeholder: "password"  %>
+    </div>
